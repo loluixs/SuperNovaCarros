@@ -15,21 +15,21 @@
      <!-- Header -->
      <header>
          <a href="#" class="logo"><img src="img/jeep.png" alt=""></a>
-
          <div class="bx bx-menu" id="menu-icon"></div>
-
          <ul class="navbar">
            <li><a href="#home">Início</a></li>
            <li><a href="#services">Serviços</a></li>
            <li><a href="#about">Sobre</a></li>
            <li><a href="#reviews">Clientes</a></li>
          </ul>
-           <div class="header-btn">
+           <div class="btnLogin-popup">
              <a href="#" class="sign-up">Cadastre-se</a>
              <a href="#" class="sign-in">Entrar</a>
            </div>
      </header>
+
      <!-- Home -->
+
      <section class="home" id="home">
        <div class="text">
          <h1><span>Procurando</span> por <br>um carro alugado?</h1>
@@ -39,11 +39,10 @@
            <img src="img/512x512.png" alt="">
          </div>
        </div>
-
        <div class="form-container">
          <form action="">
            <div class="input-box">
-             <spa>Localização</spa>
+             <span>Localização</span>
              <input type="search" name="" id="" placeholder="Procurar Lugares">
            </div>
            <div class="input-box">
@@ -57,7 +56,67 @@
            <input type="submit" name="" id="" class="btn">
          </form>
        </div>
+
      </section>
+
+     <!-- Login Wrapper -->
+     <div class="wrapper">
+       <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+       <div class="form-box login">
+         <h2>Login</h2>
+         <form action="#">
+           <div class="input-box2">
+             <span class="icon"><ion-icon name="mail"></ion-icon></span>
+             <input type="email" required>
+             <label>Email</label>
+           </div>
+           <div class="input-box2">
+             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+             <input type="password" required>
+             <label>Senha</label>
+           </div>
+           <div class="remember-forgot">
+             <label><input type="checkbox">Lembre de mim</label>
+             <a href="#">Esqueceu a senha?</a>
+           </div>
+           <button type="submit" class="btn">Login</button>
+           <div class="login-register">
+             <p>Não possui cadastro?<a href="#" class="register-link"> Cadastre-se</a></p>
+           </div>
+         </form>
+       </div>
+
+       <div class="form-box register">
+         <h2>Cadastro</h2>
+         <form action="#">
+           <div class="input-box2">
+             <span class="icon"><ion-icon name="person"></ion-icon></span>
+             <input type="text" required>
+             <label>Nome
+             </label>
+           </div>
+           <div class="input-box2">
+             <span class="icon"><ion-icon name="mail"></ion-icon></span>
+             <input type="email" required>
+             <label>Email</label>
+           </div>
+           <div class="input-box2">
+             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+             <input type="password" required>
+             <label>Senha</label>
+           </div>
+           <div class="remember-forgot">
+             <label><input type="checkbox">Eu li e concordo com os termos de uso</label>
+           </div>
+           <button type="submit" class="btn">Cadastre-se</button>
+           <div class="login-register">
+             <p>Já possui uma conta?<a href="#" class="login-link"> Entrar</a></p>
+           </div>
+         </form>
+       </div>
+
+     </div>
+
      <!-- Ride -->
      <section class="ride" id="ride">
        <div class="heading">
@@ -86,13 +145,14 @@
          <div class="box">
            <i class='bx bx-car' ></i>
            <h2>Veículo</h2>
-           <p>Escolha um carro com sua preferências
-             <br>Escolha um carro com sua preferências
-             <br>Escolha um carro com sua preferências
+           <p>Escolha um carro com sua preferência
+             <br>Escolha um carro com sua preferência
+             <br>Escolha um carro com sua preferência
            </p>
          </div>
        </div>
      </section>
+
      <!-- Services -->
      <section class="services" id="services">
        <div class="heading">
@@ -151,6 +211,7 @@
          </div>
        </div>
      </section>
+
      <!-- About -->
      <section class="about" id="about">
        <div class="heading">
@@ -250,6 +311,8 @@
 
      <!-- Link To JS -->
      <script src="main.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
